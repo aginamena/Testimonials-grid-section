@@ -1,0 +1,131 @@
+body{
+  box-sizing: border-box; /* we want to have fixed width */
+  width: 100vw;
+  background-color : hsl(210, 46%, 95%);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+#content{
+  display: grid;
+  grid-template-columns: repeat(11, 1fr); /* lst chg */
+  grid-template-rows: repeat(9, 1fr);
+  grid-row-gap:20px;
+  grid-column-gap:20px;
+  /* we want to make our site as responsive as possible */
+  width: 70vw;
+  margin : auto;
+  margin-top : 50px;
+  height: 80vh;
+  opacity : 1;
+
+}
+#Daniel-Clifford{
+  grid-column: 1 / 6;
+  grid-row : 1 / 5;
+  background-color: hsl(263, 55%, 52%);
+  padding: 25px;
+  color: white;
+  position: relative;
+  border-radius: 5%;
+
+}
+#Daniel-Clifford .heading, .graduate, .name{
+  font-weight: 600;
+}
+#Daniel-Clifford .graduate{
+  opacity : 0.5;
+}
+#Daniel-Clifford .heading{
+  position:relative;
+  clear : left;
+}
+#Daniel-Clifford #quotation{
+  position:absolute;
+  top : 0;
+  right : 50px;
+  /*z-index: -1; /* we want it to be at the bottom of the stack */
+}
+#Jonathan-Walters{
+  grid-column: 6 / 9;
+  grid-row : 1 / 5;
+  padding: 25px;
+  color : white;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 5%;
+}
+#Jonathan-Walters .heading, .graduate, .name{
+  font-weight: 600;
+}
+#Jonathan-Walters .graduate{
+  opacity: 0.5;
+}
+#Kira-Whittle{
+  grid-column: 9 / 12;
+  grid-row : 1 / 9;
+  padding: 25px;
+  background-color: white;
+  border-radius: 5%;
+}
+#Kira-Whittle .heading, .graduate, .name{
+  font-weight: 600;
+}
+#Kira-Whittle .graduate{
+  opacity: 0.5;
+}
+
+#Jeanette-Harmon{
+  grid-column: 1 / 4;
+  grid-row : 5 / 9;
+  padding: 25px;
+  background-color: white;
+  border-radius: 5%;
+}
+#Jeanette-Harmon .heading, .graduate, .name{
+  font-weight: 600;
+}
+#Jeanette-Harmon .graduate{
+  opacity: 0.5;
+}
+#patrick-Abrams{
+  grid-column: 4 / 9;
+  grid-row : 5 / 9;
+  padding: 25px;
+  background-color: hsl(219, 29%, 14%);
+  color : white;
+  border-radius: 5%;
+}
+#patrick-Abrams.heading, .graduate, .name{
+  font-weight: 600;
+}
+#patrick-Abrams .graduate{
+  opacity: 0.5;
+}
+.content{
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.7; /* we set the opacity to 70% THE parent (100%) so it will be blury */
+}
+
+.images{
+  border-radius: 100%;
+  float : left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width : 25px;
+}
+.attribution{
+  grid-column: 1 / 6;
+  grid-row : 9 / 10;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+}
+/* if the screen is 1193 or smaller, we want to use mobile design */
+@media only screen and (max-width: 1193px) {
+  #content{
+    display:block;
+    width: 50vw;
+  }
+}
